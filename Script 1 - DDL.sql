@@ -33,11 +33,9 @@ create table mesa(
 
 create table pedido(
 	id_pedido int auto_increment primary key,
-    id_mesa int not null,
     id_mozo int not null,
     fechaYHora datetime not null,
     estado_pedido enum('pendiente', 'en_preparacion', 'entregado', 'cancelado') not null,
-    foreign key(id_mesa) references mesa(id_mesa),
     foreign key(id_mozo) references mozo(id_mozo) 
 );
 
