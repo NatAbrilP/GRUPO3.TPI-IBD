@@ -135,14 +135,16 @@ Analiza pedidos asociados a múltiples mesas y muestra los casos de mayor factur
 
 ---
 
-## 📚 Documentación
+## Documentación
 
 - 📄 [Documentación Técnica](docs/DocumentacionTecnica.pdf)
 - 📊 [Modelo Conceptual](img/DC.png)
 - 📈 [Diagrama Entidad-Relación](img/DER.png)
+- 🗂️ [Archivo del Modelo Relacional (.mwb)](modeloRelacionalTPI.mwb)
 - 💻 [Script DDL](Script%201%20-%20DDL.sql)
 - 📥 [Script DML](Script%202%20-%20DML.sql)
 - 🔎 [Consultas SQL](4%20-%20Consultas%20validación%20de%20datos.sql)
+
 ---
 
 <div align="center">
