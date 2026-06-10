@@ -41,6 +41,14 @@ create table pedido(
     foreign key(id_mozo) references mozo(id_mozo) 
 );
 
+create table pedido_mesa(
+    id_pedido int not null,
+    id_mesa int not null,
+    primary key (id_pedido, id_mesa),
+    foreign key(id_pedido) references pedido(id_pedido),
+    foreign key(id_mesa) references mesa(id_mesa)
+);
+
 create table detalle_pedido(
 	id_detalle int auto_increment primary key,
     id_pedido int not null,
