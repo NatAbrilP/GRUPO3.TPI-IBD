@@ -52,7 +52,7 @@ insert into pedido(id_pedido, id_mozo, fechaYHora, estado_pedido) values
     (6, 4, '2026-06-03 12:50:00', 'entregado'),
     (7, 1, '2026-06-03 13:05:00', 'en_preparacion'),
     (8, 2, '2026-06-04 20:00:00', 'entregado'),
-    (9, 3, '2026-06-04 21:00:00', 'entregado'),
+    (9, 3, '2026-06-05 12:30:00', 'pendiente'),
     (10, 4, '2026-06-05 12:45:00', 'pendiente');
 
 insert into pedido_mesa(id_pedido, id_mesa) values
@@ -114,3 +114,4 @@ update mozo set estado='inactivo' where id_mozo=4;
 update producto set precio=19000 where id_producto=15;
 
 delete from detalle_pedido where id_detalle=1 and id_pedido in(select id_pedido from pedido where estado_pedido='pendiente');
+delete from detalle_pedido where id_detalle=29 and id_pedido in(select id_pedido from pedido where estado_pedido='pendiente');
